@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // reverse string
+        var str="hello";
+        add=" ";
+        for(i=str.length-1;i>=0;i--){
+            console.log(str[i]);
+            add+=str[i];
+        }        
+        console.log("Reverse a string",add);
+        // sum of even and odd
+        var s=[23,54,67,64,46,95,98];
+        even= 0;
+        odd=0;
+        for(i=0;i<s.length;i++){
+            console.log(s[i]);
+            if(s[i]%2==0){
+                even+=s[i];
+            }
+            else{
+                odd+=s[i];
+            }
+        }
+        console.log("sum of evens",even);
+        console.log("sum of odds" ,odd);
+        // iterate an object in for of
+        var obj={
+            name:"nani",
+            movie:"saripoda sanivaram"
+        }
+        for(var [keys,values] of Object.entries(obj)){
+            console.log( "Key =",keys," ","Value =",values);
+        }
+    </script>
+</body>
+</html>
